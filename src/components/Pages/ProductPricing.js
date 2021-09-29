@@ -1,191 +1,94 @@
-import React from 'react'
-import { NavLink } from "react-router-dom"
+import React, { Component } from 'react'
+import axios from 'axios'
+import { NavLink,Redirect } from "react-router-dom";
 
-const ProductPricing = () => {
-    return (
-        <div>
-            <div id="pricing" className="section-title">
-                {/* <h3>Clients</h3> */}
-                <p>Our Pricing</p>
-            </div>
-            <div  className="demo section-bg my-4">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-3 col-sm-6">
-                            <div className="pricingTable">
-                                <div className="pricingTable-header">
-                                    <i className="fa fa-adjust"></i>
-                                    <div className="price-value"> $10.00 <span className="month">per month</span> </div>
-                                </div>
-                                <h3 className="heading">Standard</h3>
-                                <div className="pricing-content">
-                                    <ul>
-                                        <li><b>50GB</b> Disk Space</li>
-                                        <li><b>50</b> Email Accounts</li>
-                                        <li><b>50GB</b> Monthly Bandwidth</li>
-                                        <li><b>10</b> subdomains</li>
-                                        <li><b>15</b> Domains</li>
-                                    </ul>
-                                </div>
-                                <div className="pricingTable-signup">
-                                    <NavLink to="#">sign up</NavLink>
-                                </div>
-                            </div>
-                        </div>
+export default class ProductPricing extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            // PlanDescripton: '',
+            // PlanName:''
+        }
+    }
 
-                        <div className="col-md-3 col-sm-6">
-                            <div className="pricingTable green">
-                                <div className="pricingTable-header">
-                                    <i className="fa fa-briefcase"></i>
-                                    <div className="price-value"> $20.00 <span className="month">per month</span> </div>
-                                </div>
-                                <h3 className="heading">Business</h3>
-                                <div className="pricing-content">
-                                    <ul>
-                                        <li><b>60GB</b> Disk Space</li>
-                                        <li><b>60</b> Email Accounts</li>
-                                        <li><b>60GB</b> Monthly Bandwidth</li>
-                                        <li><b>15</b> subdomains</li>
-                                        <li><b>20</b> Domains</li>
-                                    </ul>
-                                </div>
-                                <div className="pricingTable-signup">
-                                    <NavLink to="#">sign up</NavLink>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-3 col-sm-6">
-                            <div className="pricingTable blue">
-                                <div className="pricingTable-header">
-                                    <i className="fa fa-diamond"></i>
-                                    <div className="price-value"> $30.00 <span className="month">per month</span> </div>
-                                </div>
-                                <h3 className="heading">Premium</h3>
-                                <div className="pricing-content">
-                                    <ul>
-                                        <li><b>70GB</b> Disk Space</li>
-                                        <li><b>70</b> Email Accounts</li>
-                                        <li><b>70GB</b> Monthly Bandwidth</li>
-                                        <li><b>20</b> subdomains</li>
-                                        <li><b>25</b> Domains</li>
-                                    </ul>
-                                </div>
-                                <div className="pricingTable-signup">
-                                    <NavLink to="#">sign up</NavLink>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-3 col-sm-6">
-                            <div className="pricingTable blue">
-                                <div className="pricingTable-header">
-                                    <i className="fa fa-diamond"></i>
-                                    <div className="price-value"> $30.00 <span className="month">per month</span> </div>
-                                </div>
-                                <h3 className="heading">Premium</h3>
-                                <div className="pricing-content">
-                                    <ul>
-                                        <li><b>70GB</b> Disk Space</li>
-                                        <li><b>70</b> Email Accounts</li>
-                                        <li><b>70GB</b> Monthly Bandwidth</li>
-                                        <li><b>20</b> subdomains</li>
-                                        <li><b>25</b> Domains</li>
-                                    </ul>
-                                </div>
-                                <div className="pricingTable-signup">
-                                    <NavLink to="#">sign up</NavLink>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-3 col-sm-6">
-                            <div className="pricingTable blue">
-                                <div className="pricingTable-header">
-                                    <i className="fa fa-diamond"></i>
-                                    <div className="price-value"> $30.00 <span className="month">per month</span> </div>
-                                </div>
-                                <h3 className="heading">Premium</h3>
-                                <div className="pricing-content">
-                                    <ul>
-                                        <li><b>70GB</b> Disk Space</li>
-                                        <li><b>70</b> Email Accounts</li>
-                                        <li><b>70GB</b> Monthly Bandwidth</li>
-                                        <li><b>20</b> subdomains</li>
-                                        <li><b>25</b> Domains</li>
-                                    </ul>
-                                </div>
-                                <div className="pricingTable-signup">
-                                    <NavLink to="#">sign up</NavLink>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-3 col-sm-6">
-                            <div className="pricingTable blue">
-                                <div className="pricingTable-header">
-                                    <i className="fa fa-diamond"></i>
-                                    <div className="price-value"> $30.00 <span className="month">per month</span> </div>
-                                </div>
-                                <h3 className="heading">Premium</h3>
-                                <div className="pricing-content">
-                                    <ul>
-                                        <li><b>70GB</b> Disk Space</li>
-                                        <li><b>70</b> Email Accounts</li>
-                                        <li><b>70GB</b> Monthly Bandwidth</li>
-                                        <li><b>20</b> subdomains</li>
-                                        <li><b>25</b> Domains</li>
-                                    </ul>
-                                </div>
-                                <div className="pricingTable-signup">
-                                    <NavLink to="#">sign up</NavLink>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-3 col-sm-6">
-                            <div className="pricingTable blue">
-                                <div className="pricingTable-header">
-                                    <i className="fa fa-diamond"></i>
-                                    <div className="price-value"> $30.00 <span className="month">per month</span> </div>
-                                </div>
-                                <h3 className="heading">Premium</h3>
-                                <div className="pricing-content">
-                                    <ul>
-                                        <li><b>70GB</b> Disk Space</li>
-                                        <li><b>70</b> Email Accounts</li>
-                                        <li><b>70GB</b> Monthly Bandwidth</li>
-                                        <li><b>20</b> subdomains</li>
-                                        <li><b>25</b> Domains</li>
-                                    </ul>
-                                </div>
-                                <div className="pricingTable-signup">
-                                    <NavLink to="#">sign up</NavLink>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-3 col-sm-6">
-                            <div className="pricingTable red">
-                                <div className="pricingTable-header">
-                                    <i className="fa fa-cube"></i>
-                                    <div className="price-value"> $40.00 <span className="month">per month</span> </div>
-                                </div>
-                                <h3 className="heading">Extra</h3>
-                                <div className="pricing-content">
-                                    <ul>
-                                        <li><b>80GB</b> Disk Space</li>
-                                        <li><b>80</b> Email Accounts</li>
-                                        <li><b>80GB</b> Monthly Bandwidth</li>
-                                        <li><b>25</b> subdomains</li>
-                                        <li><b>30</b> Domains</li>
-                                    </ul>
-                                </div>
-                                <div className="pricingTable-signup">
-                                    <NavLink to="#">sign up</NavLink>
-                                </div>
-                            </div>
-                        </div>
+    getData() {
+        const user = JSON.parse(localStorage.getItem('token'));
+        axios.get('http://localhost:8000/api/pricelist').then(res => {
+            console.log(JSON.stringify(res.data))
+            //var data = res.data
+
+            // var loopData = ''
+            // var i;
+
+
+            this.setState({ data: res.data })
+        })
+    }
+    componentDidMount() {
+        this.getData()
+    }
+    render() {
+        const { data } = this.state
+        console.log(data)
+        return (
+            localStorage.getItem('token') ?
+                <>
+
+                    {
+                        alert("You Still Logedin Please Logout!")
+                    }
+
+                    <Redirect to="/admin/addservice" />
+                </>
+                :
+                <>
+                    <div id="pricing" className="section-title">
+                        {/* <h3>Clients</h3> */}
+                        <p>Our Pricing</p>
+                        <div className="container-fluid bg ">
+                 
+                    <div className="container rowC my-4">
+                        {
+                            data && data.map(item => {
+                                console.warn(item.PlanDescription, "testeststs")
+                                return (
+                                    <div className="">
+
+
+
+                                        <h3 className="heading">{item.PlanName}</h3>
+                                        {/* <span>{item.Price}</span> */}
+                                        <div className="price-value"> INR {item.Price} <span className="month">per month</span> </div>
+
+                                        <ul>
+                                            {
+                                                JSON.parse(item.PlanDescription).map(n => {
+                                                    return (
+                                                        <li>
+                                                            { n.label}
+
+                                                        </li>
+                                                    )
+                                                })
+                                            }
+                                        </ul>
+                                        <div className="pricingTable-signup">
+                                            <NavLink to="#">sign up</NavLink>
+                                        </div>
+
+                                    </div>
+                                    
+
+
+
+                                )
+                            })
+                        }
                     </div>
-                </div>
-            </div>
-
-        </div>
-    )
+                    </div>
+                    </div>
+                </>
+        )
+    }
 }
 
-export default ProductPricing

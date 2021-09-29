@@ -1,8 +1,10 @@
 import React from "react";
 import web from '../../images/about.svg'
 
+
 export const About = () => {
   return (
+    
     <div>
       <section id="about" className="about">
         <div className="container my-4">

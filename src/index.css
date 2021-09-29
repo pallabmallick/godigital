@@ -11,11 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'family', sans-serif;
+  font-family: "family", sans-serif;
 }
 /*--------------------------------------------------------------
 # Hero Section
@@ -128,7 +128,7 @@ code {
 
 /* Hero Section End */
 /* Loadmore Button Start */
- .btn-get-service{
+.btn-get-service {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -139,10 +139,10 @@ code {
   color: #3498db;
   border: 2px solid #3498db;
   text-decoration: none;
- margin: 0 auto;
-    display: block;
+  margin: 0 auto;
+  display: block;
 }
- .btn-get-service:hover{
+.btn-get-service:hover {
   background: #3498db;
   color: #fff;
 }
@@ -151,7 +151,7 @@ code {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.hr{
+.hr {
   border-top: 1px dotted red;
 }
 .about h3 {
@@ -190,7 +190,6 @@ code {
   }
 }
 /* End About Section */
-
 
 /*--------------------------------------------------------------
 # Contact Us
@@ -261,7 +260,9 @@ code {
   color: #fff;
 }
 
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
   background: #eb5d1e;
   color: #fff;
 }
@@ -321,7 +322,8 @@ code {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -403,7 +405,7 @@ section {
 }
 
 .section-title p::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 60px;
@@ -444,186 +446,186 @@ section {
 
 /* End Client Section */
 .InfiniteCarouselDotActiveIcon {
-    background-color: #eb5d1e !important;
+  background-color: #eb5d1e !important;
 }
 
 /* Product Pricing */
 
 .pricingTable {
-    text-align: center;
-    background: #fff;
-    margin: 0 -15px;
-    box-shadow: 0 0 10px #ababab;
-    padding-bottom: 40px;
-    border-radius: 10px;
-    color: #cad0de;
-    transform: scale(1);
-    transition: all .5s ease 0s
+  text-align: center;
+  background: #fff;
+  margin: 0 -15px;
+  box-shadow: 0 0 10px #ababab;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  color: #cad0de;
+  transform: scale(1);
+  transition: all 0.5s ease 0s;
 }
 
 .pricingTable:hover {
-    transform: scale(1.05);
-    z-index: 1
+  transform: scale(1.05);
+  z-index: 1;
 }
 
 .pricingTable .pricingTable-header {
-    padding: 40px 0;
-    background: #f5f6f9;
-    border-radius: 10px 10px 50% 50%;
-    transition: all .5s ease 0s
+  padding: 40px 0;
+  background: #f5f6f9;
+  border-radius: 10px 10px 50% 50%;
+  transition: all 0.5s ease 0s;
 }
 
 .pricingTable:hover .pricingTable-header {
-    background: #ff9624
+  background: #ff9624;
 }
 
 .pricingTable .pricingTable-header i {
-    font-size: 50px;
-    color: #858c9a;
-    margin-bottom: 10px;
-    transition: all .5s ease 0s
+  font-size: 50px;
+  color: #858c9a;
+  margin-bottom: 10px;
+  transition: all 0.5s ease 0s;
 }
 
 .pricingTable .price-value {
-    font-size: 35px;
-    color: #ff9624;
-    transition: all .5s ease 0s
+  font-size: 35px;
+  color: #ff9624;
+  transition: all 0.5s ease 0s;
 }
 
 .pricingTable .month {
-    display: block;
-    font-size: 14px;
-    color: #cad0de
+  display: block;
+  font-size: 14px;
+  color: #cad0de;
 }
 
 .pricingTable:hover .month,
 .pricingTable:hover .price-value,
 .pricingTable:hover .pricingTable-header i {
-    color: #fff
+  color: #fff;
 }
 
 .pricingTable .heading {
-    font-size: 24px;
-    color: #ff9624;
-    margin-bottom: 20px;
-    text-transform: uppercase
+  font-size: 24px;
+  color: #ff9624;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .pricingTable .pricing-content ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 30px
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .pricingTable .pricing-content ul li {
-    line-height: 30px;
-    color: #a7a8aa
+  line-height: 30px;
+  color: #a7a8aa;
 }
 
 .pricingTable .pricingTable-signup a {
-    display: inline-block;
-    font-size: 15px;
-    color: #fff;
-    padding: 10px 35px;
-    border-radius: 20px;
-    background: #ffa442;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all .3s ease 0s
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px 35px;
+  border-radius: 20px;
+  background: #ffa442;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
 }
 
 .pricingTable .pricingTable-signup a:hover {
-    box-shadow: 0 0 10px #ffa442
+  box-shadow: 0 0 10px #ffa442;
 }
 
 .pricingTable.blue .heading,
 .pricingTable.blue .price-value {
-    color: #4b64ff
+  color: #4b64ff;
 }
 
 .pricingTable.blue .pricingTable-signup a,
 .pricingTable.blue:hover .pricingTable-header {
-    background: #4b64ff
+  background: #4b64ff;
 }
 
 .pricingTable.blue .pricingTable-signup a:hover {
-    box-shadow: 0 0 10px #4b64ff
+  box-shadow: 0 0 10px #4b64ff;
 }
 
 .pricingTable.red .heading,
 .pricingTable.red .price-value {
-    color: #ff4b4b
+  color: #ff4b4b;
 }
 
 .pricingTable.red .pricingTable-signup a,
 .pricingTable.red:hover .pricingTable-header {
-    background: #ff4b4b
+  background: #ff4b4b;
 }
 
 .pricingTable.red .pricingTable-signup a:hover {
-    box-shadow: 0 0 10px #ff4b4b
+  box-shadow: 0 0 10px #ff4b4b;
 }
 
 .pricingTable.green .heading,
 .pricingTable.green .price-value {
-    color: #40c952
+  color: #40c952;
 }
 
 .pricingTable.green .pricingTable-signup a,
 .pricingTable.green:hover .pricingTable-header {
-    background: #40c952
+  background: #40c952;
 }
 
 .pricingTable.green .pricingTable-signup a:hover {
-    box-shadow: 0 0 10px #40c952
+  box-shadow: 0 0 10px #40c952;
 }
 
 .pricingTable.blue:hover .price-value,
 .pricingTable.green:hover .price-value,
 .pricingTable.red:hover .price-value {
-    color: #fff
+  color: #fff;
 }
 
-@media screen and (max-width:990px) {
-    .pricingTable {
-        margin: 0 0 20px
-    }
+@media screen and (max-width: 990px) {
+  .pricingTable {
+    margin: 0 0 20px;
+  }
 }
 /* Whatsapp style start */
- /* for desktop */
-      .whatsapp_float {
-          position: fixed;
-          width: 60px;
-          height: 60px;
-          bottom: 40px;
-          right: 40px;
-          background-color: #25d366;
-          color: #FFF;
-          border-radius: 50px;
-          text-align: center;
-          font-size: 30px;
-          box-shadow: 2px 2px 3px #999;
-          z-index: 100;
-      }
+/* for desktop */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
 
-      .whatsapp-icon {
-          margin-top: 16px;
-      }
+.whatsapp-icon {
+  margin-top: 16px;
+}
 
-      /* for mobile */
-      @media screen and (max-width: 767px) {
-          .whatsapp-icon {
-              margin-top: 10px;
-          }
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .whatsapp-icon {
+    margin-top: 10px;
+  }
 
-          .whatsapp_float {
-              width: 40px;
-              height: 40px;
-              bottom: 20px;
-              right: 10px;
-              font-size: 22px;
-          }
-      }
+  .whatsapp_float {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+  }
+}
 /* Whatsapp style end */
 /*--------------------------------------------------------------
 # F.A.Q
@@ -651,9 +653,9 @@ section {
   color: #c2b7b1;
   text-align: center;
 }
-.ques{
-  display: flex; 
-  justify-content: center
+.ques {
+  display: flex;
+  justify-content: center;
 }
 
 .section-title p {
@@ -666,7 +668,7 @@ section {
 }
 
 .section-title p::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 60px;
@@ -677,3 +679,106 @@ section {
 }
 
 /* End Faq */
+/*admin Nav*/
+.adminnav a {
+  /* float: left; */
+  padding: 12px;
+  color: white;
+  /* text-decoration: none; */
+  font-size: 17px;
+  /* width: 25%; Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center;
+}
+
+/*admin Nav End*/
+
+/*Service List */
+
+.delete {
+  background-color: #c21a1a;
+  color: white;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.update {
+  background-color: green;
+  color: white;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*Service List End*/
+/* .row {
+   display: flex;
+   justify-content: space-around;
+} */
+.bg{
+   background: #fef8f5;
+}
+
+.rowC {
+  display: grid;
+  flex-direction: row;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  padding: 5px;
+  /* background: #f2f1f2; */
+  grid-column-gap: 10px;
+
+  
+  /* border: 5px solid #fef8f5; */
+  /* background: #fef8f5; */
+  
+}
+.rowC ul{
+list-style: none;
+padding: 0;
+margin-bottom: 30px;
+}
+.rowC ul li{
+ line-height: 30px;
+ /* color: #a7a8aa; */
+}
+.rowC .heading{
+font-size: 24px;
+color: #ff9624;
+margin-bottom: 20px;
+text-transform: capitalize;
+/* text-decoration: underline; */
+}
+.rowC .month {
+  display: block;
+  font-size: 14px;
+  /* color: #cad0de; */
+}
+.rowC .pricingTable-signup a {
+  display: inline-block;
+  font-size: 10px;
+  color: #fff;
+  padding: 10px 35px;
+  border-radius: 20px;
+  background: #ffa442;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 20px;
+}
+.rowC .pricingTable-signup a:hover {
+  box-shadow: 0 0 10px #ffa442;
+}
+
+@media screen and (max-width: 992px) {
+  .rowC {
+    /* background-color: blue; */
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+  
+  }
+}
+/* @media screen and (max-width: 600px) {
+  .rowC {
+    background-color: olive;
+  }
+} */

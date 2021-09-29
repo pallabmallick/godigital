@@ -8,6 +8,7 @@ import client6 from "../../images/client-6.png"
 import client7 from "../../images/client-7.png"
 import InfiniteCarousel from 'react-leaf-carousel';
 
+
 const Client = () => {
     return (
         <div>
