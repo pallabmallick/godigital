@@ -12,7 +12,7 @@ import InfiniteCarousel from 'react-leaf-carousel';
 const Client = () => {
     return (
         <div>
-            <section id="clients" class="clients section-bg">
+            <section id="clients" className="clients section-bg">
                 <div className="container" data-aos="fade-up">
 
                     <div className="section-title">

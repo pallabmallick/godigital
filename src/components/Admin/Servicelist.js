@@ -50,7 +50,7 @@ function Servicelist() {
                                 <tr>
                                     <td>{res.id}</td>
                                     <td>{res.ServiceName}</td>
-                                    <td><img style={{ width: 100 }} src={"http://127.0.0.1:8000/" + res.ServiceImg} /></td>
+                                    <td><img style={{ width: 100 }} src={"http://127.0.0.1:8000/" + res.ServiceImg} alt="img" /></td>
                                     <td>{res.ServiceDesc}</td>
                                     <td><span onClick={() => { deleteOperation(res.id) }} className="delete">Delete</span></td>
                                     <td><Link to={"updateservicelist/" + res.id}><span className="update">Update</span></Link></td>

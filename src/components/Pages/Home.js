@@ -7,6 +7,7 @@ import Faq from "./Faq";
 import ProductPricing from "./ProductPricing";
 import Service from "./Service"
 import { Redirect } from "react-router-dom";
+import Technology from "./Technology";
 
 
 export const Home = () => {
@@ -41,10 +42,12 @@ export const Home = () => {
             <Common />
             <Service />
             <About />
+            <Technology />
             <Client />
             <ProductPricing />
             <Faq />
             <Contact />
+           
 
           </>
       }

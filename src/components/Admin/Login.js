@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react'
-import { Redirect } from 'react-router';
+// import { Redirect } from 'react-router';
 
 class Login extends Component {
     constructor(props) {

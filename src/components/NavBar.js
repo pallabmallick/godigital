@@ -24,6 +24,7 @@ function NavBar() {
           <>
               <div className="adminnav">
                 <Link to="/admin/addservice">AddService</Link>
+                <Link to="/admin/addtech">AddTechnology</Link>
                 <Link to="/admin/addprice">AddPrice</Link>
                 <Link to="/admin/servicelist">ServiceList</Link>
                 <Link to="/admin/updateservicelist">UpdateService</Link>
@@ -36,7 +37,7 @@ function NavBar() {
           :
           <>
               <Link exact to="/" className="nav-logo">
-                GoDigital
+                WebCore
             <i className="fas fa-code"></i>
               </Link>
 

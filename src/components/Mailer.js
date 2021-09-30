@@ -40,7 +40,7 @@ export const Mailer = () => {
                                 <div className="address">
                                     <i className="fa fa-map-marker"></i>
                                     <h4>Location:</h4>
-                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                    <p>Habra,West Bengal, 743263</p>
                                 </div>
 
                                 <div className="email">
@@ -52,10 +52,10 @@ export const Mailer = () => {
                                 <div className="phone">
                                     <i className="fa fa-phone"></i>
                                     <h4>Call:</h4>
-                                    <p>+1 5589 55488 55s</p>
+                                    <p>+91 7001973508</p>
                                 </div>
 
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" style={{ border: "0", width: "100%", height: "290px" }} frameborder="0" allowfullscreen></iframe>
+                                <iframe title="My Company GeoLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14708.115895246381!2d88.65702923802496!3d22.83841753214618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8b05c99150473%3A0x9fa489c6885f8bcc!2sHabra%20Station!5e0!3m2!1sen!2sin!4v1632894366108!5m2!1sen!2sin"></iframe>
                             </div>
 
                         </div>
@@ -64,20 +64,20 @@ export const Mailer = () => {
                             <form onSubmit={sendEmail} className="php-email-form">
                                 <div className="row">
                                     <div className="form-group col-md-6">
-                                        <label for="name">Your Name</label>
+                                        <label htmlFor="name">Your Name</label>
                                         <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
                                     </div>
                                     <div className="form-group col-md-6 mt-3 mt-md-0">
-                                        <label for="name">Your Email</label>
+                                        <label htmlFor="name">Your Email</label>
                                         <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" required />
                                     </div>
                                 </div>
                                 <div className="form-group mt-3">
-                                    <label for="name">Subject</label>
+                                    <label htmlFor="name">Subject</label>
                                     <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" />
                                 </div>
                                 <div className="form-group mt-3">
-                                    <label for="name">Message</label>
+                                    <label htmlFor="name">Message</label>
                                     <textarea className="form-control" name="message" rows="10" required></textarea>
                                 </div>
                                 <div className="my-3">

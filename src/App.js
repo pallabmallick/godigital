@@ -10,6 +10,7 @@ import Service from "../src/components/Pages/Service"
 import { Contact } from "./components/Pages/Contact";
 import Login from "./components/Admin/Login";
 import Addservice from "./components/Admin/Addservice";
+import Addtechnology from "./components/Admin/Addtechnology";
 import Addprice from "./components/Admin/Addprice";
 import Servicelist from "./components/Admin/Servicelist";
 import UpdateServicelist from "./components/Admin/UpdateServicelist";
@@ -51,6 +52,9 @@ function App() {
           {/* <Route path="/admin/addprice" exact component={Addprice} /> */}
           <Route path="/admin/addservice">
             <Protected exact Cmp={Addservice} />
+          </Route>
+          <Route path="/admin/addtech">
+            <Protected exact Cmp={Addtechnology} />
           </Route>
           <Route path="/admin/addprice">
             <Protected exact Cmp={Addprice} />

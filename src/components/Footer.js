@@ -26,10 +26,10 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="col-md-6 item text">
-                            <h3>Company Name</h3>
-                            <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                            <h3>GoDigital</h3>
+                            <p>Being a pioneer in off-shore and on-shore web development services, we cater to the precise needs and demands of our customers in the most cost-effective way.</p>
                         </div>
-                        <div className="col item social"><a to="#"><i className="fa fa-facebook-square"></i></a><a to="#"><i className="fa fa-twitter"></i></a><a to="#"><i className="fa fa-twitter"></i></a><a to="#"><i className="fa fa-twitter"></i></a></div>
+                        <div className="col item social"><NavLink to="#"><i className="fa fa-facebook-square"></i></NavLink><NavLink to="#"><i className="fa fa-twitter"></i></NavLink><NavLink to="#"><i className="fa fa-twitter"></i></NavLink><NavLink to="#"><i className="fa fa-twitter"></i></NavLink></div>
                     </div>
                     <p className="copyright">GoDigital Pvt.Ltd © 2018</p>
                 </div>

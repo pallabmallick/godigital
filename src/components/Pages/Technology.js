@@ -2,18 +2,17 @@ import React, { useState, useEffect } from 'react';
 // import data from "../data"
 import { Redirect } from "react-router-dom";
 
-const Service = () => {
+const Technology = () => {
     // const history = useHistory();
-    // const user = JSON.parse(localStorage.getItem('token'));
-    JSON.parse(localStorage.getItem('token'));
-    // console.log(user);
+    const user = JSON.parse(localStorage.getItem('token'));
+    console.log(user);
     const [allData, setAllData] = useState([]);
     const [petCount, setDataCount] = useState(4);
     const loadmore = () => {
         setDataCount(allData.length)
     };
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/api/productlist')
+        fetch('http://127.0.0.1:8000/api/techlist')
             .then((res) => res.json())
             .then((data) => {
                 setAllData(data)
@@ -38,16 +37,17 @@ const Service = () => {
                             <section id="Service" className="py-4 container">
                                 <div className="section-title">
                                     {/* <h2>Clients</h2> */}
-                                    <p>Our Service</p>
+                                    <p>Technology We Use</p>
+                                    <span>We make the technology talk! The wide variety of technologies used by our organization makes every complexity easy. The variety of technology and our expertise on them are simply hard to find elsewhere.</span>
                                 </div>
                                 <div className="row justify-content-center" >
-                                    {allData.slice(0, petCount).map((srvdata, pos) => (
+                                    {allData.slice(0, petCount).map((pet, pos) => (
                                         <div className="col-11 col-md-6 col-lg-3 mx-0 mb-4" key={pos}>
                                             <div className="card p-0 overflow-hidden h-100 shadow">
-                                                <img src={"http://127.0.0.1:8000/" + srvdata.ServiceImg} className="card-img-top" alt="img" />
+                                                <img src={"http://127.0.0.1:8000/" + pet.TechImg} className="card-img-top" alt="img" />
                                                 <div className="card-body">
-                                                    <h5 className="card-title">{srvdata.ServiceName}</h5>
-                                                    <p className="card-text">{srvdata.ServiceDesc}</p>
+                                                    <h5 className="card-title">{pet.TechName}</h5>
+                                                    <p className="card-text">{pet.TechDesc}</p>
 
                                                 </div>
                                             </div>
@@ -71,4 +71,4 @@ const Service = () => {
     );
 };
 
-export default Service
+export default Technology

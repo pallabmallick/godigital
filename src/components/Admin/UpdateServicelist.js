@@ -8,7 +8,7 @@ function UpdateServicelist(props) {
     const [ServiceName, setName] = useState("");
     const [file, setFile] = useState("");
     const [ServiceDesc, setDesc] = useState("");
-    useEffect(async () => {
+    useEffect( async () => {
         // const user = JSON.parse(localStorage.getItem('token'));
         let result = await fetch("http://127.0.0.1:8000/api/item/" + props.match.params.id);
         result = await result.json();
@@ -25,7 +25,7 @@ function UpdateServicelist(props) {
         formData.append('ServiceDesc', ServiceDesc);
         formData.append('ServiceName', ServiceName);
 
-        let result = await fetch("http://127.0.0.1:8000/api/itemupdate/" + id + "?_method=PUT", {
+     await fetch("http://127.0.0.1:8000/api/itemupdate/" + id + "?_method=PUT", {
             method: "POST",
             body: formData,
             headers: {
@@ -50,7 +50,7 @@ function UpdateServicelist(props) {
                 defaultValue={data.ServiceDesc} /> <br />
             <input className="form-control" type="file" onChange={event => setFile(event.target.files[0])}
                 defaultValue={data.ServiceImg} /> <br /><br />
-            <img style={{ width: 100 }} src={"http://127.0.0.1:8000/" + data.ServiceImg} /><br /><br />
+            <img style={{ width: 100 }} src={"http://127.0.0.1:8000/" + data.ServiceImg} alt="img"/><br /><br />
             <button className="update" onClick={() => { editProduct(data.id) }}>Update</button>
 
 

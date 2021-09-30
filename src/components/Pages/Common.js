@@ -6,7 +6,7 @@ import { Typewriter } from 'react-simple-typewriter'
 const Common =(props)=> {
     return (
         <>
-            <section id="hero" class="d-flex align-items-center">
+            <section id="hero" className="d-flex align-items-center">
                 <div id="Home" className="container my-4">
                     <div className="row gy-4">
                         <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
@@ -38,7 +38,7 @@ const Common =(props)=> {
                             {/* Tipewiter end */}
                         </div>
                         <div className="col-lg-6 order-1 order-lg-2 hero-img">
-                            <img src={web} className="img-fluid animated" alt=""/>
+                            <img src={web} className="img-fluid animated" alt="webimg"/>
         </div>
                         </div>
                     </div>
